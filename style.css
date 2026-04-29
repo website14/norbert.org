@@ -1,75 +1,23 @@
-/*---basics---*/
-
 html {
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(32, 32, 32);
 }
 
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  font-family: Inter, sans-serif;
 }
 
 div.header {
-  width: 100%;
-  padding: 0.3125rem;
+  width: 100;
   background-color: white;
-  position: sticky;
   top: 0;
-  text-align: center;
-  animation-name: main;
-  animation-duration: 1s;
+  position: sticky;
 }
-
-/*---Schrit---*/
 
 p.headerfont {
   margin-left: 0.625rem;
-  font-family: Inter, sans-serif;
-  font-weight: bold;
   font-size: 2.5vh;
-}
-
-h1.txt1 {
-  margin-left: 10px;
-  color: white;
-  font-family: Inter, sans-serif;
-  font-weight: 200;
-  font-size: 4.5vh;
-  text-align: center;
-  margin-bottom: 10px;
-  animation-name: main;
-  animation-duration: 1s;
-}
-
-p.txt2 {
-  margin-left: 10px;
-  color: white;
-  font-family: Inter, sans-serif;
-  font-weight: 1;
-  font-size: 2.2vh;
-  white-space: pre-line;
-  text-align: center;
-  animation-name: main;
-  animation-duration: 1s;
-}
-
-/*---Aniamtionen---*/
-
-@keyframes main {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/*---trenner---*/
-
-hr.trenn1 {
-  width: 50%;
-  animation-name: main;
-  animation-duration: 1s;
+  font-weight: 3500;
 }

@@ -14,10 +14,124 @@ div.header {
   background-color: white;
   top: 0;
   position: sticky;
+  animation-name: OU;
+  animation-duration: 1s;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 p.headerfont {
-  margin-left: 0.625rem;
   font-size: 2.5vh;
   font-weight: 3500;
+  animation-name: OU;
+  animation-duration: 1s;
+}
+
+h1.txt1 {
+  color: white;
+  font-weight: 400;
+  font-size: 4vh;
+  animation-name: main;
+  animation-duration: 1s;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes main {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes OU {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+hr.trenn1 {
+  width: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background: repeating-linear-gradient(
+    to right,
+    white 0px,
+    white 5px,
+    transparent 5px,
+    transparent 10px
+  );
+  animation-name: main;
+  animation-duration: 1s;
+  border: none;
+  height: 0.125rem;
+}
+
+h1.txt2 {
+  color: white;
+  font-weight: 350;
+  font-size: 3.8vh;
+  animation-name: main;
+  animation-duration: 1s;
+  display: flex;
+  justify-content: center;
+}
+
+button.btn1 {
+  border: 1px white solid;
+  background: none;
+  border-radius: 100px;
+  color: white;
+  width: fit-content;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: center;
+  display: flex;
+  align-self: center;
+  font-size: 2.4vh;
+  animation-name: main;
+  animation-duration: 1s;
+  cursor: pointer;
+  transition: 0.1s;
+  font-weight: 300;
+}
+
+button.btn1:hover {
+  color: 1px rgb(128, 128, 128) solid;
+  color: rgb(128, 128, 128);
+}
+
+@media (max-width: 400px) {
+  button.btn1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+hr.trenn2 {
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  animation-name: main;
+  animation-duration: 1s;
+}
+
+p.txt3 {
+  color: rgb(143, 143, 143);
+  font-weight: 200;
+  font-size: 2vh;
+  animation-name: main;
+  animation-duration: 1s;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
 }

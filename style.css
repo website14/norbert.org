@@ -134,4 +134,6 @@ p.txt3 {
   display: flex;
   justify-content: center;
   font-style: italic;
+  animation-name: main;
+  animation-duration: 1s;
 }
